@@ -415,7 +415,6 @@
       + '<div class="task-top"><button type="button" class="task-open" data-action="toggle-open" data-task="' + esc(task.id) + '" aria-expanded="' + (open ? "true" : "false") + '">'
       + '<span class="status-dot ' + status + '" aria-hidden="true"></span>'
       + '<span class="task-copy"><strong>' + esc(task.title) + "</strong><small>" + done + " of " + task.subtasks.length + " steps · " + statusLabel(status) + (task.templateId ? "" : " · Custom") + "</small></span>"
-      + '<span class="badge ' + status + '">' + statusLabel(status) + "</span>"
       + chevron()
       + "</button>" + tools + "</div>"
       + '<div class="fold"><div class="fold-inner"' + (open ? "" : " inert aria-hidden=\"true\"") + ">" + taskBody(task, mode) + "</div></div>"
